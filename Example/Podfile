@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RDP-SDK-iOS_Example' do
+  pod 'RDP-SDK-iOS', :path => '../'
+
+  target 'RDP-SDK-iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
