@@ -1,0 +1,6 @@
+framework module Pods_RDP_SDK_iOS_Tests {
+  umbrella header "Pods-RDP-SDK-iOS_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

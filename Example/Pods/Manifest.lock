@@ -1,0 +1,18 @@
+PODS:
+  - RDP-SDK-iOS (0.1.23):
+    - RDP-SDK-iOS/Core (= 0.1.23)
+  - RDP-SDK-iOS/Core (0.1.23)
+
+DEPENDENCIES:
+  - RDP-SDK-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  RDP-SDK-iOS:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RDP-SDK-iOS: 863f6054be42a808d44da58170127b981e86cedd
+
+PODFILE CHECKSUM: cbcd2820889bd3a2ed6bc5e46d16be99c8787f9b
+
+COCOAPODS: 1.2.1

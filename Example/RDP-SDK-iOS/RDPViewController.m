@@ -7,6 +7,7 @@
 //
 
 #import "RDPViewController.h"
+#import <RDP_SDK_iOS/RDPDirectAPI.h>
 
 @interface RDPViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    RDPDirectAPI *directAPI = [[RDPDirectAPI alloc]initWithDelegate:self];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

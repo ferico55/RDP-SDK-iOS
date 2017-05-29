@@ -1,0 +1,1075 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A3A1399640CE5C3721DE8F6E7B85C7 /* Pods-RDP-SDK-iOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F829903EC70AA5B5A82423ADCC9E2F61 /* Pods-RDP-SDK-iOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01BA04D8A8C87156C18708D6847220CE /* ConnectAPIInternalDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEABF805BE7B7792E214A6E5EBA8F3F /* ConnectAPIInternalDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0710114F1B969A526F4037C421F13635 /* RDPConnectAPITransactionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1695C5EF29CB835E49413772F4BE031E /* RDPConnectAPITransactionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E8537DB2C3BE9AC0F4C5E7FD4254760 /* HttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B8F569E55E7FCCACAE9DC1B55682CA /* HttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1597B39D315E6C2B116C9C2B59F31114 /* QueryStringBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 984516EA4CBE377BC2F472A116617754 /* QueryStringBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		188D5AAA8A7679D9BF8F04D8F50AD734 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50967AA70F7232EDA79175647E0707 /* Util.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		27F9810DECDB4EA50D225F53667914FB /* RDP-SDK-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8274790C4EA74C0BE97E25460B61B65 /* RDP-SDK-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286646F24EF1DD2F54A428B6B5DB27DC /* ParameterExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 386F9466A8F4A7EBBFBD4071519A9815 /* ParameterExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28C22F37C18C550BB6365136E1E58DB7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF8EFD5A72EC00DE0FBD241A6EA9D02 /* CoreMedia.framework */; };
+		32B7F09E88915AB715EFD6C2098CC02F /* WsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DB58E85E95D97DFC14CE0EA7EAC697 /* WsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35B20AAC2B81B4A2D9295537C1D55B37 /* HttpGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E3ECE670F677AE8F728D2E70AFA6E9 /* HttpGetRequest.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		3CA16241C1B78C46FB05418B81888B44 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB2C42917212E3BDDBAA0B2E375C959 /* AudioToolbox.framework */; };
+		3F7FE7F35419865F8D44BD674842C9AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CFC94DE05EFD15FD6EE4A4D3EC2CFF /* Foundation.framework */; };
+		4E338234F7E6AE34DDDC492D1F6CD10C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CFC94DE05EFD15FD6EE4A4D3EC2CFF /* Foundation.framework */; };
+		54678A612353DE1E7247A7B16C5DCC30 /* RDPConnectAPIWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E6572630EAFCC691ABB39D5D7E9A5E69 /* RDPConnectAPIWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5486D0A1824FE8D324E4B523AC0AB4A7 /* RDPDirectAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B45F56D931790406BFA65D7AB5DF7F28 /* RDPDirectAPIResponse.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		5C5D3E47FCB7DE5F403A4C04858BD6B0 /* UIViewControllerExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 60501904B67B908AFBCCB733832AC52D /* UIViewControllerExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DD853F50F01EF35D90CFEE1455CEEDC /* SignatureUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DEB26B232F041CCAB4B9E0C3C632F9 /* SignatureUtil.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		62514633F754ABDD7B09D7C88A09A6D8 /* Pods-RDP-SDK-iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC432F8B9147D2F9F4CB2D3914E4A60 /* Pods-RDP-SDK-iOS_Example-dummy.m */; };
+		62A9EAAF0300143A23A354769C2108C4 /* HttpPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A758E79D7E443CFF551D4AC93070926 /* HttpPostRequest.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		6455E0A2AAE8A442C5D3F0B5C70CD420 /* RDPRedirectAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E822F02AA4B24ECEB0E76A4CFEDD87 /* RDPRedirectAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65D6A6397C39C2DDB3EBCE5283641054 /* MD5Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DDB1DEA96C19832AFA8F8126396734 /* MD5Calculator.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		6664CBE4753A13C527813D643B33BA44 /* RDPDirectAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC8CD74A1581470CA9A976CCB563BE9 /* RDPDirectAPIResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		673508913B63694AFB61AAE0557C4F1A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC18ACD2F62FD057EE85CF545C2AE22 /* Accelerate.framework */; };
+		6A1ED4DB26F5034BDE6B7F75480BE490 /* RDPSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 37ACBEED4E61F2FF920FD4F22C43241D /* RDPSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFF28A4A871A40D12E222F66644EFDB /* RDPRedirectAPIWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D2AB0A0CADC1A603DDC57094CF2F5D9 /* RDPRedirectAPIWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BC7426494886314461DE9377C521B5A /* ParameterExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE784DB5F70CEF78E72555B250482706 /* ParameterExtractor.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		6C8184CB65C1D9AFD9C60506E0217106 /* RDPRedirectAPIPaymentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DFE002D098980340AE1B322E03E417C /* RDPRedirectAPIPaymentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		708A944FE823D999DC201810FDF17C43 /* SHA512Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11626D4CBC4F3F6F53428FA46D802633 /* SHA512Calculator.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		71549782410FC06A620DA21124B7A9CD /* SHA512Calculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E5844E747D2483C9FE8CB1360FCA89 /* SHA512Calculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736953176AF9ACB19C333907BEEFFE09 /* RDPDirectAPIPaymentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 87418B0726014971894041C1D326DD9A /* RDPDirectAPIPaymentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787F2C53A1D2CAB0C89AFA6F8BDFE916 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF3F6A9DE5391C44B191F6F1EEF7AEE /* MobileCoreServices.framework */; };
+		7D3DB7333E43A46D6F203A7053480E9B /* RDPRedirectAPIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7621E158BB577ABC201FE896018D4C3D /* RDPRedirectAPIWebViewController.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		7FF18B8363344BF4889D646F21238827 /* RAPIFirstRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F0845E5DD30A41C17F051034DAC8E2 /* RAPIFirstRequest.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		87E816C7813098FF21A19B1D3FE00AD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2007956E0378980146214F9E50AEB840 /* SystemConfiguration.framework */; };
+		8C6BA86EF3E0C18022A5263C27B91D3A /* RDPRedirectAPIRedirectionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5BB930817A7BF3E2D78ADEBD9A0821 /* RDPRedirectAPIRedirectionResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		970AEDF0154D6ECBB753437D67CF1D0B /* RDPDirectAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E48A6A73E9BF9EB58FABD01DEFF3FF29 /* RDPDirectAPI.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		98803FDD431C9CC12530D5C0E071B108 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B61627458457EBA2C05D6D7672C5F92 /* AVFoundation.framework */; };
+		992CFD89CCA7BA5AC29694B2BDCF7881 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D220669D1D9E3DDED368629F5DF515 /* CoreLocation.framework */; };
+		9A157FE71AC252CEE7EEEC8CFDD99915 /* RDP-SDK-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AC912CE1F61D2DABEA550203A5683A /* RDP-SDK-iOS-dummy.m */; };
+		9F2C55ABE0CC7E838CEE77F6A9155D92 /* Pods-RDP-SDK-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF4D837E7EC3E30ACB5987A05DEBB1A /* Pods-RDP-SDK-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A02B58BEABE08B89C3DC641E3D90BBF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CFC94DE05EFD15FD6EE4A4D3EC2CFF /* Foundation.framework */; };
+		AAEE40D98B028A27DA3814D0646707F1 /* RDPConnectAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 26406697A315C2CB700809DD539A0B86 /* RDPConnectAPI.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		ADB7AD5A75291D939875F50D4394E3E8 /* RDPDirectAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9B9DB4EA4723B78491CD52CB93D57B /* RDPDirectAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1A22B6E6E24A09DAAC79BDBD1F2BDDA /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B79F24C8272901C3912BE294CABB1A /* Util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2FC11D2F211EE0BF2DC49111F00F725 /* HttpPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F05023E75F64F6B6851197F6DF454E /* HttpPostRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA048D2883C9069B41D7E153F687073C /* StringResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 801F863CA9FAE2CCF59AE07D0A434553 /* StringResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA4750E59B0AC752F6B17078B231E0EC /* StringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA89A23F2DB4CEA262BCB38A26B7B16 /* StringResponse.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		BBF6FBAC5E0371E9D925E4FCEF6C8DDB /* RDPConnectAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C71A5AAC2DCFC9F1D0B30ECEAD703835 /* RDPConnectAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C227659C1B3AFC5F5E1E8DBD3690F0AF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C410358417713486AD0E5FD6E7942F43 /* MessageUI.framework */; };
+		C5471532E31329503B08EE976658A1F8 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6768996234EA5AC20EE44FC13A72A30 /* HttpRequest.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		C8138A49B9DE10734E1A9BBB4366A68C /* RAPIFirstRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 78FC7ACCA903DE06C2BACF6BBE083402 /* RAPIFirstRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F74DB00AE4105F4383D84D5E68F3B1 /* MD5Calculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C461D921AD0AB17A530806A99AC64B0 /* MD5Calculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA782C93732AD7DB411D3D11946C06BE /* RDPConnectAPIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F3BF64C85C7C88BD142BF3D1FB01 /* RDPConnectAPIWebViewController.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		CF822BFA8212A55FF39C02FED60B1C7C /* SignatureUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E974467A1A0DCCF749710939236683A6 /* SignatureUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE62012D8F546713BF038E01BF2FF8FB /* RDPRedirectAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B6199F1E9E02598B748FD0FFD581DC /* RDPRedirectAPIResponse.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		E0E0FA6DAA6C7177DC347D948F145047 /* RDPRedirectAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEF3895DAF1BAB26496641C048A8F0 /* RDPRedirectAPI.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		EA9F0E9E68DABD9DB925B38E6EFC9557 /* UIViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C1479BDD8A3AE6B64549BC64416973 /* UIViewControllerExtension.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		EEBC131616C43C67B8EF15121494832E /* HttpGetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C5DBEB17267226D912BD943B5185C12D /* HttpGetRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F023A9370CC3072AD524A1F990102DE0 /* WsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76D98D4651420CDD9F1D5C253822EA /* WsResponse.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		F2043D8DFDF948CEA4C0F8B637EC9A87 /* Pods-RDP-SDK-iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48235F2C064ABA78244E11224830F647 /* Pods-RDP-SDK-iOS_Tests-dummy.m */; };
+		F2D7331A91F0BEEAA71D3955EA9B09AD /* QueryStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CF0C170684B082AC1B822EB630B4C /* QueryStringBuilder.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		F4D0C6A3F0A1009F6DEDC3B93BD1DC47 /* RedirectAPIInternalDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3971E576A66FAC1ADEEC63DCA5AC89C6 /* RedirectAPIInternalDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F580C4CCA509843176B68AA5480ABC9F /* RDPRedirectAPIRedirectionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 868C2F3F7AD8AD868880C3673E055046 /* RDPRedirectAPIRedirectionResponse.m */; settings = {COMPILER_FLAGS = "-fmodules -fmodules-autolink"; }; };
+		FAE92E4F78CC53E34C9FDD5EB9F173B9 /* RDPRedirectAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 608DD91EE03C9FFF60AF184CEEB095F0 /* RDPRedirectAPIResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB443E883312CCE0429FC6709B02450C /* OriginViewType.h in Headers */ = {isa = PBXBuildFile; fileRef = B69A48A1B415474F0877C2D433320B49 /* OriginViewType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79DA25CF8D2C3A4A66F668D987BCA196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B6400961C6319DD01F5EE7D304C7A35;
+			remoteInfo = "RDP-SDK-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F52CA8070677A19CED64E1CC50E51 /* Pods-RDP-SDK-iOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDP-SDK-iOS_Tests-resources.sh"; sourceTree = "<group>"; };
+		0AAEF3895DAF1BAB26496641C048A8F0 /* RDPRedirectAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPRedirectAPI.m; sourceTree = "<group>"; };
+		0BB00A3F7D6F682180D173DB55DACFAB /* Pods-RDP-SDK-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDP-SDK-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0DC8CD74A1581470CA9A976CCB563BE9 /* RDPDirectAPIResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPDirectAPIResponse.h; sourceTree = "<group>"; };
+		11626D4CBC4F3F6F53428FA46D802633 /* SHA512Calculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SHA512Calculator.m; sourceTree = "<group>"; };
+		147040B28B56EED0100D78303711CC4F /* RDP_SDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RDP_SDK_iOS.framework; path = "RDP-SDK-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1695C5EF29CB835E49413772F4BE031E /* RDPConnectAPITransactionType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPConnectAPITransactionType.h; sourceTree = "<group>"; };
+		1758636AE64B383CBFB94408BA93ADDB /* Pods-RDP-SDK-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RDP-SDK-iOS_Example.modulemap"; sourceTree = "<group>"; };
+		2007956E0378980146214F9E50AEB840 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		20A203BC1F79F6CDF3A3BB501F66E73B /* Pods-RDP-SDK-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RDP-SDK-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		26406697A315C2CB700809DD539A0B86 /* RDPConnectAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPConnectAPI.m; sourceTree = "<group>"; };
+		2B61627458457EBA2C05D6D7672C5F92 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		2E3C68191AEE22F4D58DAE7261CDB501 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33AC912CE1F61D2DABEA550203A5683A /* RDP-SDK-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RDP-SDK-iOS-dummy.m"; sourceTree = "<group>"; };
+		36CA2E7C169E9C3E7C30BCECEBDED92F /* RDPRedirectAPIPaymentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPRedirectAPIPaymentType.h; sourceTree = "<group>"; };
+		37ACBEED4E61F2FF920FD4F22C43241D /* RDPSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPSDK.h; sourceTree = "<group>"; };
+		386F9466A8F4A7EBBFBD4071519A9815 /* ParameterExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ParameterExtractor.h; sourceTree = "<group>"; };
+		3971E576A66FAC1ADEEC63DCA5AC89C6 /* RedirectAPIInternalDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RedirectAPIInternalDelegate.h; sourceTree = "<group>"; };
+		3AA89A23F2DB4CEA262BCB38A26B7B16 /* StringResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StringResponse.m; sourceTree = "<group>"; };
+		3AC18ACD2F62FD057EE85CF545C2AE22 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		3EF3F6A9DE5391C44B191F6F1EEF7AEE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		42DB58E85E95D97DFC14CE0EA7EAC697 /* WsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WsResponse.h; sourceTree = "<group>"; };
+		48235F2C064ABA78244E11224830F647 /* Pods-RDP-SDK-iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RDP-SDK-iOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		489D4F35F45C0BBFC53AA5EB18622AFF /* Pods-RDP-SDK-iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RDP-SDK-iOS_Tests.modulemap"; sourceTree = "<group>"; };
+		4D2AB0A0CADC1A603DDC57094CF2F5D9 /* RDPRedirectAPIWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPRedirectAPIWebViewController.h; sourceTree = "<group>"; };
+		4F04BE476CBE04B151BA01220FEA880D /* RDPConnectAPITransactionType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPConnectAPITransactionType.h; sourceTree = "<group>"; };
+		4F5BB930817A7BF3E2D78ADEBD9A0821 /* RDPRedirectAPIRedirectionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPRedirectAPIRedirectionResponse.h; sourceTree = "<group>"; };
+		52F05023E75F64F6B6851197F6DF454E /* HttpPostRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HttpPostRequest.h; sourceTree = "<group>"; };
+		5A758E79D7E443CFF551D4AC93070926 /* HttpPostRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HttpPostRequest.m; sourceTree = "<group>"; };
+		5A84A55A87BBCAF013726B2BA1E2B855 /* RDP-SDK-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "RDP-SDK-iOS.modulemap"; sourceTree = "<group>"; };
+		5DFE002D098980340AE1B322E03E417C /* RDPRedirectAPIPaymentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPRedirectAPIPaymentType.h; sourceTree = "<group>"; };
+		60501904B67B908AFBCCB733832AC52D /* UIViewControllerExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIViewControllerExtension.h; sourceTree = "<group>"; };
+		608DD91EE03C9FFF60AF184CEEB095F0 /* RDPRedirectAPIResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPRedirectAPIResponse.h; sourceTree = "<group>"; };
+		69E822F02AA4B24ECEB0E76A4CFEDD87 /* RDPRedirectAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPRedirectAPI.h; sourceTree = "<group>"; };
+		6C9B9DB4EA4723B78491CD52CB93D57B /* RDPDirectAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPDirectAPI.h; sourceTree = "<group>"; };
+		6CDF3B7539E50683FD004CC6886C6F70 /* Pods-RDP-SDK-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RDP-SDK-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6DF2FC2674C9282EAE5ED26DCCC9AAEF /* Pods-RDP-SDK-iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RDP-SDK-iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FF4D837E7EC3E30ACB5987A05DEBB1A /* Pods-RDP-SDK-iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RDP-SDK-iOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		72AB54E7865941DD70A77BA5E6AFF3F1 /* Pods-RDP-SDK-iOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDP-SDK-iOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7621E158BB577ABC201FE896018D4C3D /* RDPRedirectAPIWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPRedirectAPIWebViewController.m; sourceTree = "<group>"; };
+		78FC7ACCA903DE06C2BACF6BBE083402 /* RAPIFirstRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RAPIFirstRequest.h; sourceTree = "<group>"; };
+		791E3FEE1D68AC419A7D7281941E5C65 /* Pods-RDP-SDK-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDP-SDK-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7F9E4D8BD201699206F40EB2536AD31C /* Pods_RDP_SDK_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RDP_SDK_iOS_Tests.framework; path = "Pods-RDP-SDK-iOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		801F863CA9FAE2CCF59AE07D0A434553 /* StringResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StringResponse.h; sourceTree = "<group>"; };
+		822277437AA8118BFE8B717F23214D8B /* Pods-RDP-SDK-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDP-SDK-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		868C2F3F7AD8AD868880C3673E055046 /* RDPRedirectAPIRedirectionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPRedirectAPIRedirectionResponse.m; sourceTree = "<group>"; };
+		87418B0726014971894041C1D326DD9A /* RDPDirectAPIPaymentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPDirectAPIPaymentType.h; sourceTree = "<group>"; };
+		87E3ECE670F677AE8F728D2E70AFA6E9 /* HttpGetRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HttpGetRequest.m; sourceTree = "<group>"; };
+		8BEABF805BE7B7792E214A6E5EBA8F3F /* ConnectAPIInternalDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ConnectAPIInternalDelegate.h; sourceTree = "<group>"; };
+		8C461D921AD0AB17A530806A99AC64B0 /* MD5Calculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MD5Calculator.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B1C9976C0E7222353AC62BC40698C5 /* Pods_RDP_SDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RDP_SDK_iOS_Example.framework; path = "Pods-RDP-SDK-iOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E5844E747D2483C9FE8CB1360FCA89 /* SHA512Calculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHA512Calculator.h; sourceTree = "<group>"; };
+		984516EA4CBE377BC2F472A116617754 /* QueryStringBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QueryStringBuilder.h; sourceTree = "<group>"; };
+		9BF8EFD5A72EC00DE0FBD241A6EA9D02 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		A055A089B541FBA044449E7B96C1BB31 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A9D1584C73243C4F0E62A29BA97788 /* RDP-SDK-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDP-SDK-iOS-prefix.pch"; sourceTree = "<group>"; };
+		AFC432F8B9147D2F9F4CB2D3914E4A60 /* Pods-RDP-SDK-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RDP-SDK-iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		B0B6199F1E9E02598B748FD0FFD581DC /* RDPRedirectAPIResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPRedirectAPIResponse.m; sourceTree = "<group>"; };
+		B45F56D931790406BFA65D7AB5DF7F28 /* RDPDirectAPIResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPDirectAPIResponse.m; sourceTree = "<group>"; };
+		B4F0845E5DD30A41C17F051034DAC8E2 /* RAPIFirstRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RAPIFirstRequest.m; sourceTree = "<group>"; };
+		B69A48A1B415474F0877C2D433320B49 /* OriginViewType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OriginViewType.h; sourceTree = "<group>"; };
+		C1B8F569E55E7FCCACAE9DC1B55682CA /* HttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		C410358417713486AD0E5FD6E7942F43 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		C5DBEB17267226D912BD943B5185C12D /* HttpGetRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HttpGetRequest.h; sourceTree = "<group>"; };
+		C6768996234EA5AC20EE44FC13A72A30 /* HttpRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		C71A5AAC2DCFC9F1D0B30ECEAD703835 /* RDPConnectAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPConnectAPI.h; sourceTree = "<group>"; };
+		C8274790C4EA74C0BE97E25460B61B65 /* RDP-SDK-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDP-SDK-iOS-umbrella.h"; sourceTree = "<group>"; };
+		CE50967AA70F7232EDA79175647E0707 /* Util.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		CF36BFB37715D28BA1D3B5090358B365 /* RDP-SDK-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RDP-SDK-iOS.xcconfig"; sourceTree = "<group>"; };
+		D03D76519A3D6E46B4A74258C0D9BBD3 /* Pods-RDP-SDK-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDP-SDK-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4B79F24C8272901C3912BE294CABB1A /* Util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		DE4AB3BE2C85F52ADAC492BAB64F3A10 /* Pods-RDP-SDK-iOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDP-SDK-iOS_Example-resources.sh"; sourceTree = "<group>"; };
+		DEE7F3BF64C85C7C88BD142BF3D1FB01 /* RDPConnectAPIWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPConnectAPIWebViewController.m; sourceTree = "<group>"; };
+		DFF282F09AA18E8206903BDD04AC04AC /* Pods-RDP-SDK-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDP-SDK-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E2DEB26B232F041CCAB4B9E0C3C632F9 /* SignatureUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignatureUtil.m; sourceTree = "<group>"; };
+		E48A6A73E9BF9EB58FABD01DEFF3FF29 /* RDPDirectAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RDPDirectAPI.m; sourceTree = "<group>"; };
+		E5DD58D4FCB70A99EEB753F06A91D8E6 /* RDPDirectAPIPaymentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPDirectAPIPaymentType.h; sourceTree = "<group>"; };
+		E6572630EAFCC691ABB39D5D7E9A5E69 /* RDPConnectAPIWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RDPConnectAPIWebViewController.h; sourceTree = "<group>"; };
+		E6C1479BDD8A3AE6B64549BC64416973 /* UIViewControllerExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerExtension.m; sourceTree = "<group>"; };
+		E6DDB1DEA96C19832AFA8F8126396734 /* MD5Calculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MD5Calculator.m; sourceTree = "<group>"; };
+		E8D220669D1D9E3DDED368629F5DF515 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		E974467A1A0DCCF749710939236683A6 /* SignatureUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignatureUtil.h; sourceTree = "<group>"; };
+		EF63C0818CC1FF8F1E5D52B7C4299E42 /* Pods-RDP-SDK-iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RDP-SDK-iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F4855D40C828FC4DF647875A08E66D1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F829903EC70AA5B5A82423ADCC9E2F61 /* Pods-RDP-SDK-iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RDP-SDK-iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F8CFC94DE05EFD15FD6EE4A4D3EC2CFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FAB2C42917212E3BDDBAA0B2E375C959 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		FC4CF0C170684B082AC1B822EB630B4C /* QueryStringBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QueryStringBuilder.m; sourceTree = "<group>"; };
+		FC76D98D4651420CDD9F1D5C253822EA /* WsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WsResponse.m; sourceTree = "<group>"; };
+		FE784DB5F70CEF78E72555B250482706 /* ParameterExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ParameterExtractor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0599BF808472CFE6427FBB0A5DB57B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7FE7F35419865F8D44BD674842C9AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25FC99A3EB6A2EF09C6FAEA4B6D49F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E338234F7E6AE34DDDC492D1F6CD10C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A69526ABACC5A54AE146F0EDE0B9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673508913B63694AFB61AAE0557C4F1A /* Accelerate.framework in Frameworks */,
+				3CA16241C1B78C46FB05418B81888B44 /* AudioToolbox.framework in Frameworks */,
+				98803FDD431C9CC12530D5C0E071B108 /* AVFoundation.framework in Frameworks */,
+				992CFD89CCA7BA5AC29694B2BDCF7881 /* CoreLocation.framework in Frameworks */,
+				28C22F37C18C550BB6365136E1E58DB7 /* CoreMedia.framework in Frameworks */,
+				A02B58BEABE08B89C3DC641E3D90BBF2 /* Foundation.framework in Frameworks */,
+				C227659C1B3AFC5F5E1E8DBD3690F0AF /* MessageUI.framework in Frameworks */,
+				787F2C53A1D2CAB0C89AFA6F8BDFE916 /* MobileCoreServices.framework in Frameworks */,
+				87E816C7813098FF21A19B1D3FE00AD2 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010F8930EAE95EE3FCB37A3C88FC437E /* Enumeration */ = {
+			isa = PBXGroup;
+			children = (
+				1695C5EF29CB835E49413772F4BE031E /* RDPConnectAPITransactionType.h */,
+				87418B0726014971894041C1D326DD9A /* RDPDirectAPIPaymentType.h */,
+				5DFE002D098980340AE1B322E03E417C /* RDPRedirectAPIPaymentType.h */,
+			);
+			name = Enumeration;
+			path = Enumeration;
+			sourceTree = "<group>";
+		};
+		0398D1D229213A537C0C38EACFCFEBDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D09D2AF6022EE12E5A92254C78F262A2 /* WebService */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05DD997CAA106C5E6217B827625CAA52 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37ACBEED4E61F2FF920FD4F22C43241D /* RDPSDK.h */,
+				EE5B9682EF72E9266DEE86667DB7C839 /* Exclude */,
+				600FFB72CA5C8300EF1370D3CE39FE03 /* Public */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		11E5F49B59CFDFFA08BA3135E1696F18 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A055A089B541FBA044449E7B96C1BB31 /* Info.plist */,
+				5A84A55A87BBCAF013726B2BA1E2B855 /* RDP-SDK-iOS.modulemap */,
+				CF36BFB37715D28BA1D3B5090358B365 /* RDP-SDK-iOS.xcconfig */,
+				33AC912CE1F61D2DABEA550203A5683A /* RDP-SDK-iOS-dummy.m */,
+				A6A9D1584C73243C4F0E62A29BA97788 /* RDP-SDK-iOS-prefix.pch */,
+				C8274790C4EA74C0BE97E25460B61B65 /* RDP-SDK-iOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RDP-SDK-iOS";
+			sourceTree = "<group>";
+		};
+		1CC4F9E37805CD05A80F712D37F8C96C /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				C5DBEB17267226D912BD943B5185C12D /* HttpGetRequest.h */,
+				87E3ECE670F677AE8F728D2E70AFA6E9 /* HttpGetRequest.m */,
+				52F05023E75F64F6B6851197F6DF454E /* HttpPostRequest.h */,
+				5A758E79D7E443CFF551D4AC93070926 /* HttpPostRequest.m */,
+				C1B8F569E55E7FCCACAE9DC1B55682CA /* HttpRequest.h */,
+				C6768996234EA5AC20EE44FC13A72A30 /* HttpRequest.m */,
+				801F863CA9FAE2CCF59AE07D0A434553 /* StringResponse.h */,
+				3AA89A23F2DB4CEA262BCB38A26B7B16 /* StringResponse.m */,
+				42DB58E85E95D97DFC14CE0EA7EAC697 /* WsResponse.h */,
+				FC76D98D4651420CDD9F1D5C253822EA /* WsResponse.m */,
+			);
+			name = WebService;
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9A2E3F9EA5A3C57E63BE127410A197A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A0A7AE37CE801ED2756C9B5F256355A /* Pods-RDP-SDK-iOS_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F4855D40C828FC4DF647875A08E66D1D /* Info.plist */,
+				489D4F35F45C0BBFC53AA5EB18622AFF /* Pods-RDP-SDK-iOS_Tests.modulemap */,
+				6DF2FC2674C9282EAE5ED26DCCC9AAEF /* Pods-RDP-SDK-iOS_Tests-acknowledgements.markdown */,
+				EF63C0818CC1FF8F1E5D52B7C4299E42 /* Pods-RDP-SDK-iOS_Tests-acknowledgements.plist */,
+				48235F2C064ABA78244E11224830F647 /* Pods-RDP-SDK-iOS_Tests-dummy.m */,
+				72AB54E7865941DD70A77BA5E6AFF3F1 /* Pods-RDP-SDK-iOS_Tests-frameworks.sh */,
+				008F52CA8070677A19CED64E1CC50E51 /* Pods-RDP-SDK-iOS_Tests-resources.sh */,
+				F829903EC70AA5B5A82423ADCC9E2F61 /* Pods-RDP-SDK-iOS_Tests-umbrella.h */,
+				D03D76519A3D6E46B4A74258C0D9BBD3 /* Pods-RDP-SDK-iOS_Tests.debug.xcconfig */,
+				DFF282F09AA18E8206903BDD04AC04AC /* Pods-RDP-SDK-iOS_Tests.release.xcconfig */,
+			);
+			name = "Pods-RDP-SDK-iOS_Tests";
+			path = "Target Support Files/Pods-RDP-SDK-iOS_Tests";
+			sourceTree = "<group>";
+		};
+		2CE2A68D7C62F6D11313E85CA825C283 /* Enumeration */ = {
+			isa = PBXGroup;
+			children = (
+				B69A48A1B415474F0877C2D433320B49 /* OriginViewType.h */,
+				4F04BE476CBE04B151BA01220FEA880D /* RDPConnectAPITransactionType.h */,
+				E5DD58D4FCB70A99EEB753F06A91D8E6 /* RDPDirectAPIPaymentType.h */,
+				36CA2E7C169E9C3E7C30BCECEBDED92F /* RDPRedirectAPIPaymentType.h */,
+			);
+			name = Enumeration;
+			path = Enumeration;
+			sourceTree = "<group>";
+		};
+		3886001B60E34FED2F37FE0A3BF6DCF6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8C461D921AD0AB17A530806A99AC64B0 /* MD5Calculator.h */,
+				E6DDB1DEA96C19832AFA8F8126396734 /* MD5Calculator.m */,
+				386F9466A8F4A7EBBFBD4071519A9815 /* ParameterExtractor.h */,
+				FE784DB5F70CEF78E72555B250482706 /* ParameterExtractor.m */,
+				984516EA4CBE377BC2F472A116617754 /* QueryStringBuilder.h */,
+				FC4CF0C170684B082AC1B822EB630B4C /* QueryStringBuilder.m */,
+				97E5844E747D2483C9FE8CB1360FCA89 /* SHA512Calculator.h */,
+				11626D4CBC4F3F6F53428FA46D802633 /* SHA512Calculator.m */,
+				E974467A1A0DCCF749710939236683A6 /* SignatureUtil.h */,
+				E2DEB26B232F041CCAB4B9E0C3C632F9 /* SignatureUtil.m */,
+				D4B79F24C8272901C3912BE294CABB1A /* Util.h */,
+				CE50967AA70F7232EDA79175647E0707 /* Util.m */,
+				2CE2A68D7C62F6D11313E85CA825C283 /* Enumeration */,
+				B670E384B8F46879BAB3484E1ADD48B6 /* Protocol */,
+			);
+			name = Util;
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3E8F32AFF0CE33DF9A3593AD940F19E1 /* RDP-SDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B1B6E05DB5B04FDC9503FD53B4AC5A86 /* Core */,
+				11E5F49B59CFDFFA08BA3135E1696F18 /* Support Files */,
+			);
+			name = "RDP-SDK-iOS";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4FE9ACB92492C84AFE16F98C53F7D12D /* Pods-RDP-SDK-iOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2E3C68191AEE22F4D58DAE7261CDB501 /* Info.plist */,
+				1758636AE64B383CBFB94408BA93ADDB /* Pods-RDP-SDK-iOS_Example.modulemap */,
+				6CDF3B7539E50683FD004CC6886C6F70 /* Pods-RDP-SDK-iOS_Example-acknowledgements.markdown */,
+				20A203BC1F79F6CDF3A3BB501F66E73B /* Pods-RDP-SDK-iOS_Example-acknowledgements.plist */,
+				AFC432F8B9147D2F9F4CB2D3914E4A60 /* Pods-RDP-SDK-iOS_Example-dummy.m */,
+				822277437AA8118BFE8B717F23214D8B /* Pods-RDP-SDK-iOS_Example-frameworks.sh */,
+				DE4AB3BE2C85F52ADAC492BAB64F3A10 /* Pods-RDP-SDK-iOS_Example-resources.sh */,
+				6FF4D837E7EC3E30ACB5987A05DEBB1A /* Pods-RDP-SDK-iOS_Example-umbrella.h */,
+				0BB00A3F7D6F682180D173DB55DACFAB /* Pods-RDP-SDK-iOS_Example.debug.xcconfig */,
+				791E3FEE1D68AC419A7D7281941E5C65 /* Pods-RDP-SDK-iOS_Example.release.xcconfig */,
+			);
+			name = "Pods-RDP-SDK-iOS_Example";
+			path = "Target Support Files/Pods-RDP-SDK-iOS_Example";
+			sourceTree = "<group>";
+		};
+		51E033EED1933A1C23BBC306FA389C81 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				60501904B67B908AFBCCB733832AC52D /* UIViewControllerExtension.h */,
+				E6C1479BDD8A3AE6B64549BC64416973 /* UIViewControllerExtension.m */,
+			);
+			name = Extension;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5713F3E213C186062DEBE90B1B72D0D8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E8F32AFF0CE33DF9A3593AD940F19E1 /* RDP-SDK-iOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		600FFB72CA5C8300EF1370D3CE39FE03 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				0398D1D229213A537C0C38EACFCFEBDA /* Model */,
+				F4F5C2579BB685F7FF7EA45F2FF3404F /* Util */,
+				6F1A5E909DCC7D706FF048947CE3151F /* View */,
+				BEE185914E69BFC5022FF0AC392D8706 /* Wrapper */,
+			);
+			name = Public;
+			path = Public;
+			sourceTree = "<group>";
+		};
+		602DD612AF97155B2F35EAAD4C10BDBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94B1C9976C0E7222353AC62BC40698C5 /* Pods_RDP_SDK_iOS_Example.framework */,
+				7F9E4D8BD201699206F40EB2536AD31C /* Pods_RDP_SDK_iOS_Tests.framework */,
+				147040B28B56EED0100D78303711CC4F /* RDP_SDK_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F1A5E909DCC7D706FF048947CE3151F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6572630EAFCC691ABB39D5D7E9A5E69 /* RDPConnectAPIWebViewController.h */,
+				DEE7F3BF64C85C7C88BD142BF3D1FB01 /* RDPConnectAPIWebViewController.m */,
+				4D2AB0A0CADC1A603DDC57094CF2F5D9 /* RDPRedirectAPIWebViewController.h */,
+				7621E158BB577ABC201FE896018D4C3D /* RDPRedirectAPIWebViewController.m */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				5713F3E213C186062DEBE90B1B72D0D8 /* Development Pods */,
+				24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */,
+				602DD612AF97155B2F35EAAD4C10BDBF /* Products */,
+				FB23444A414B16411870C08E295E8F7E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B1B6E05DB5B04FDC9503FD53B4AC5A86 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D9D36AC1CE79A112A3CF971232E8FD24 /* RDP-SDK-iOS */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B670E384B8F46879BAB3484E1ADD48B6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8BEABF805BE7B7792E214A6E5EBA8F3F /* ConnectAPIInternalDelegate.h */,
+				3971E576A66FAC1ADEEC63DCA5AC89C6 /* RedirectAPIInternalDelegate.h */,
+			);
+			name = Protocol;
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BEE185914E69BFC5022FF0AC392D8706 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C71A5AAC2DCFC9F1D0B30ECEAD703835 /* RDPConnectAPI.h */,
+				26406697A315C2CB700809DD539A0B86 /* RDPConnectAPI.m */,
+				6C9B9DB4EA4723B78491CD52CB93D57B /* RDPDirectAPI.h */,
+				E48A6A73E9BF9EB58FABD01DEFF3FF29 /* RDPDirectAPI.m */,
+				69E822F02AA4B24ECEB0E76A4CFEDD87 /* RDPRedirectAPI.h */,
+				0AAEF3895DAF1BAB26496641C048A8F0 /* RDPRedirectAPI.m */,
+			);
+			name = Wrapper;
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		C9A2E3F9EA5A3C57E63BE127410A197A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AC18ACD2F62FD057EE85CF545C2AE22 /* Accelerate.framework */,
+				FAB2C42917212E3BDDBAA0B2E375C959 /* AudioToolbox.framework */,
+				2B61627458457EBA2C05D6D7672C5F92 /* AVFoundation.framework */,
+				E8D220669D1D9E3DDED368629F5DF515 /* CoreLocation.framework */,
+				9BF8EFD5A72EC00DE0FBD241A6EA9D02 /* CoreMedia.framework */,
+				F8CFC94DE05EFD15FD6EE4A4D3EC2CFF /* Foundation.framework */,
+				C410358417713486AD0E5FD6E7942F43 /* MessageUI.framework */,
+				3EF3F6A9DE5391C44B191F6F1EEF7AEE /* MobileCoreServices.framework */,
+				2007956E0378980146214F9E50AEB840 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D09D2AF6022EE12E5A92254C78F262A2 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				0DC8CD74A1581470CA9A976CCB563BE9 /* RDPDirectAPIResponse.h */,
+				B45F56D931790406BFA65D7AB5DF7F28 /* RDPDirectAPIResponse.m */,
+				4F5BB930817A7BF3E2D78ADEBD9A0821 /* RDPRedirectAPIRedirectionResponse.h */,
+				868C2F3F7AD8AD868880C3673E055046 /* RDPRedirectAPIRedirectionResponse.m */,
+				608DD91EE03C9FFF60AF184CEEB095F0 /* RDPRedirectAPIResponse.h */,
+				B0B6199F1E9E02598B748FD0FFD581DC /* RDPRedirectAPIResponse.m */,
+			);
+			name = WebService;
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		D9D36AC1CE79A112A3CF971232E8FD24 /* RDP-SDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05DD997CAA106C5E6217B827625CAA52 /* Classes */,
+			);
+			name = "RDP-SDK-iOS";
+			path = "RDP-SDK-iOS";
+			sourceTree = "<group>";
+		};
+		EE5B9682EF72E9266DEE86667DB7C839 /* Exclude */ = {
+			isa = PBXGroup;
+			children = (
+				78FC7ACCA903DE06C2BACF6BBE083402 /* RAPIFirstRequest.h */,
+				B4F0845E5DD30A41C17F051034DAC8E2 /* RAPIFirstRequest.m */,
+				51E033EED1933A1C23BBC306FA389C81 /* Extension */,
+				3886001B60E34FED2F37FE0A3BF6DCF6 /* Util */,
+				1CC4F9E37805CD05A80F712D37F8C96C /* WebService */,
+			);
+			name = Exclude;
+			path = Exclude;
+			sourceTree = "<group>";
+		};
+		F4F5C2579BB685F7FF7EA45F2FF3404F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				010F8930EAE95EE3FCB37A3C88FC437E /* Enumeration */,
+			);
+			name = Util;
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FB23444A414B16411870C08E295E8F7E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FE9ACB92492C84AFE16F98C53F7D12D /* Pods-RDP-SDK-iOS_Example */,
+				2A0A7AE37CE801ED2756C9B5F256355A /* Pods-RDP-SDK-iOS_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D7E0D638CBEF43F692578D8C6B1A109 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2C55ABE0CC7E838CEE77F6A9155D92 /* Pods-RDP-SDK-iOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921AB55493846ED7257A9B0B1D915A1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A3A1399640CE5C3721DE8F6E7B85C7 /* Pods-RDP-SDK-iOS_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C2F2272C87A7F535C77EA6C99AF8E41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BA04D8A8C87156C18708D6847220CE /* ConnectAPIInternalDelegate.h in Headers */,
+				EEBC131616C43C67B8EF15121494832E /* HttpGetRequest.h in Headers */,
+				B2FC11D2F211EE0BF2DC49111F00F725 /* HttpPostRequest.h in Headers */,
+				0E8537DB2C3BE9AC0F4C5E7FD4254760 /* HttpRequest.h in Headers */,
+				C8F74DB00AE4105F4383D84D5E68F3B1 /* MD5Calculator.h in Headers */,
+				FB443E883312CCE0429FC6709B02450C /* OriginViewType.h in Headers */,
+				286646F24EF1DD2F54A428B6B5DB27DC /* ParameterExtractor.h in Headers */,
+				1597B39D315E6C2B116C9C2B59F31114 /* QueryStringBuilder.h in Headers */,
+				C8138A49B9DE10734E1A9BBB4366A68C /* RAPIFirstRequest.h in Headers */,
+				27F9810DECDB4EA50D225F53667914FB /* RDP-SDK-iOS-umbrella.h in Headers */,
+				BBF6FBAC5E0371E9D925E4FCEF6C8DDB /* RDPConnectAPI.h in Headers */,
+				0710114F1B969A526F4037C421F13635 /* RDPConnectAPITransactionType.h in Headers */,
+				0710114F1B969A526F4037C421F13635 /* RDPConnectAPITransactionType.h in Headers */,
+				54678A612353DE1E7247A7B16C5DCC30 /* RDPConnectAPIWebViewController.h in Headers */,
+				ADB7AD5A75291D939875F50D4394E3E8 /* RDPDirectAPI.h in Headers */,
+				736953176AF9ACB19C333907BEEFFE09 /* RDPDirectAPIPaymentType.h in Headers */,
+				736953176AF9ACB19C333907BEEFFE09 /* RDPDirectAPIPaymentType.h in Headers */,
+				6664CBE4753A13C527813D643B33BA44 /* RDPDirectAPIResponse.h in Headers */,
+				6455E0A2AAE8A442C5D3F0B5C70CD420 /* RDPRedirectAPI.h in Headers */,
+				6C8184CB65C1D9AFD9C60506E0217106 /* RDPRedirectAPIPaymentType.h in Headers */,
+				6C8184CB65C1D9AFD9C60506E0217106 /* RDPRedirectAPIPaymentType.h in Headers */,
+				8C6BA86EF3E0C18022A5263C27B91D3A /* RDPRedirectAPIRedirectionResponse.h in Headers */,
+				FAE92E4F78CC53E34C9FDD5EB9F173B9 /* RDPRedirectAPIResponse.h in Headers */,
+				6AFF28A4A871A40D12E222F66644EFDB /* RDPRedirectAPIWebViewController.h in Headers */,
+				6A1ED4DB26F5034BDE6B7F75480BE490 /* RDPSDK.h in Headers */,
+				F4D0C6A3F0A1009F6DEDC3B93BD1DC47 /* RedirectAPIInternalDelegate.h in Headers */,
+				71549782410FC06A620DA21124B7A9CD /* SHA512Calculator.h in Headers */,
+				CF822BFA8212A55FF39C02FED60B1C7C /* SignatureUtil.h in Headers */,
+				BA048D2883C9069B41D7E153F687073C /* StringResponse.h in Headers */,
+				5C5D3E47FCB7DE5F403A4C04858BD6B0 /* UIViewControllerExtension.h in Headers */,
+				B1A22B6E6E24A09DAAC79BDBD1F2BDDA /* Util.h in Headers */,
+				32B7F09E88915AB715EFD6C2098CC02F /* WsResponse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5B6400961C6319DD01F5EE7D304C7A35 /* RDP-SDK-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B2C78CE440C6349A952959A1DE54ED /* Build configuration list for PBXNativeTarget "RDP-SDK-iOS" */;
+			buildPhases = (
+				60D92D3E2F8338595BA7BBB7ED5A4462 /* Sources */,
+				38A69526ABACC5A54AE146F0EDE0B9CE /* Frameworks */,
+				9C2F2272C87A7F535C77EA6C99AF8E41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RDP-SDK-iOS";
+			productName = "RDP-SDK-iOS";
+			productReference = 147040B28B56EED0100D78303711CC4F /* RDP_SDK_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C28F209BA65A4BFD7DC3B5D0F15FF927 /* Pods-RDP-SDK-iOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9F410CFD7BD2E3A09DADA0961E79B40 /* Build configuration list for PBXNativeTarget "Pods-RDP-SDK-iOS_Example" */;
+			buildPhases = (
+				94A5E5E3D187BAAF9B4736841FE09F5F /* Sources */,
+				0599BF808472CFE6427FBB0A5DB57B96 /* Frameworks */,
+				8D7E0D638CBEF43F692578D8C6B1A109 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				227DD2AC4DE9550EBD4B7B9FFE18CD98 /* PBXTargetDependency */,
+			);
+			name = "Pods-RDP-SDK-iOS_Example";
+			productName = "Pods-RDP-SDK-iOS_Example";
+			productReference = 94B1C9976C0E7222353AC62BC40698C5 /* Pods_RDP_SDK_iOS_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE7C11A105DEA2CDFAD0F1DBA170E2AA /* Pods-RDP-SDK-iOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD4C47CE1DA82B31E6E83CCF637D0A2D /* Build configuration list for PBXNativeTarget "Pods-RDP-SDK-iOS_Tests" */;
+			buildPhases = (
+				12674349296E0044AD615096EE63032A /* Sources */,
+				25FC99A3EB6A2EF09C6FAEA4B6D49F5C /* Frameworks */,
+				921AB55493846ED7257A9B0B1D915A1F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RDP-SDK-iOS_Tests";
+			productName = "Pods-RDP-SDK-iOS_Tests";
+			productReference = 7F9E4D8BD201699206F40EB2536AD31C /* Pods_RDP_SDK_iOS_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 602DD612AF97155B2F35EAAD4C10BDBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C28F209BA65A4BFD7DC3B5D0F15FF927 /* Pods-RDP-SDK-iOS_Example */,
+				CE7C11A105DEA2CDFAD0F1DBA170E2AA /* Pods-RDP-SDK-iOS_Tests */,
+				5B6400961C6319DD01F5EE7D304C7A35 /* RDP-SDK-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12674349296E0044AD615096EE63032A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2043D8DFDF948CEA4C0F8B637EC9A87 /* Pods-RDP-SDK-iOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60D92D3E2F8338595BA7BBB7ED5A4462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B20AAC2B81B4A2D9295537C1D55B37 /* HttpGetRequest.m in Sources */,
+				62A9EAAF0300143A23A354769C2108C4 /* HttpPostRequest.m in Sources */,
+				C5471532E31329503B08EE976658A1F8 /* HttpRequest.m in Sources */,
+				65D6A6397C39C2DDB3EBCE5283641054 /* MD5Calculator.m in Sources */,
+				6BC7426494886314461DE9377C521B5A /* ParameterExtractor.m in Sources */,
+				F2D7331A91F0BEEAA71D3955EA9B09AD /* QueryStringBuilder.m in Sources */,
+				7FF18B8363344BF4889D646F21238827 /* RAPIFirstRequest.m in Sources */,
+				9A157FE71AC252CEE7EEEC8CFDD99915 /* RDP-SDK-iOS-dummy.m in Sources */,
+				AAEE40D98B028A27DA3814D0646707F1 /* RDPConnectAPI.m in Sources */,
+				CA782C93732AD7DB411D3D11946C06BE /* RDPConnectAPIWebViewController.m in Sources */,
+				970AEDF0154D6ECBB753437D67CF1D0B /* RDPDirectAPI.m in Sources */,
+				5486D0A1824FE8D324E4B523AC0AB4A7 /* RDPDirectAPIResponse.m in Sources */,
+				E0E0FA6DAA6C7177DC347D948F145047 /* RDPRedirectAPI.m in Sources */,
+				F580C4CCA509843176B68AA5480ABC9F /* RDPRedirectAPIRedirectionResponse.m in Sources */,
+				DE62012D8F546713BF038E01BF2FF8FB /* RDPRedirectAPIResponse.m in Sources */,
+				7D3DB7333E43A46D6F203A7053480E9B /* RDPRedirectAPIWebViewController.m in Sources */,
+				708A944FE823D999DC201810FDF17C43 /* SHA512Calculator.m in Sources */,
+				5DD853F50F01EF35D90CFEE1455CEEDC /* SignatureUtil.m in Sources */,
+				BA4750E59B0AC752F6B17078B231E0EC /* StringResponse.m in Sources */,
+				EA9F0E9E68DABD9DB925B38E6EFC9557 /* UIViewControllerExtension.m in Sources */,
+				188D5AAA8A7679D9BF8F04D8F50AD734 /* Util.m in Sources */,
+				F023A9370CC3072AD524A1F990102DE0 /* WsResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A5E5E3D187BAAF9B4736841FE09F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62514633F754ABDD7B09D7C88A09A6D8 /* Pods-RDP-SDK-iOS_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		227DD2AC4DE9550EBD4B7B9FFE18CD98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RDP-SDK-iOS";
+			target = 5B6400961C6319DD01F5EE7D304C7A35 /* RDP-SDK-iOS */;
+			targetProxy = 79DA25CF8D2C3A4A66F668D987BCA196 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E3B053261724C553D12FDDA3B58A039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFF282F09AA18E8206903BDD04AC04AC /* Pods-RDP-SDK-iOS_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Tests/Pods-RDP-SDK-iOS_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RDP_SDK_iOS_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		490648CB4080B391EA36F70F59DC1F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03D76519A3D6E46B4A74258C0D9BBD3 /* Pods-RDP-SDK-iOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Tests/Pods-RDP-SDK-iOS_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RDP_SDK_iOS_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5FF07E6DC84174620E332C0F2B6518E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB00A3F7D6F682180D173DB55DACFAB /* Pods-RDP-SDK-iOS_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Example/Pods-RDP-SDK-iOS_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RDP_SDK_iOS_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		912BFFB0392A7DBE6D2EE90B380337DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791E3FEE1D68AC419A7D7281941E5C65 /* Pods-RDP-SDK-iOS_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RDP-SDK-iOS_Example/Pods-RDP-SDK-iOS_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RDP_SDK_iOS_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C4E14FE01BE5E49BC920221D5CAF59E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF36BFB37715D28BA1D3B5090358B365 /* RDP-SDK-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RDP-SDK-iOS/RDP-SDK-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RDP-SDK-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RDP-SDK-iOS/RDP-SDK-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RDP_SDK_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3A4B28E350D7D432D5D6736F1428A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF36BFB37715D28BA1D3B5090358B365 /* RDP-SDK-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RDP-SDK-iOS/RDP-SDK-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RDP-SDK-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RDP-SDK-iOS/RDP-SDK-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RDP_SDK_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B2C78CE440C6349A952959A1DE54ED /* Build configuration list for PBXNativeTarget "RDP-SDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A4B28E350D7D432D5D6736F1428A7D /* Debug */,
+				C4E14FE01BE5E49BC920221D5CAF59E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD4C47CE1DA82B31E6E83CCF637D0A2D /* Build configuration list for PBXNativeTarget "Pods-RDP-SDK-iOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490648CB4080B391EA36F70F59DC1F38 /* Debug */,
+				1E3B053261724C553D12FDDA3B58A039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9F410CFD7BD2E3A09DADA0961E79B40 /* Build configuration list for PBXNativeTarget "Pods-RDP-SDK-iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF07E6DC84174620E332C0F2B6518E3 /* Debug */,
+				912BFFB0392A7DBE6D2EE90B380337DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

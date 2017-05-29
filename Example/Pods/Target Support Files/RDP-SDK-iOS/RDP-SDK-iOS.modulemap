@@ -1,0 +1,6 @@
+framework module RDP_SDK_iOS {
+  umbrella header "RDP-SDK-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

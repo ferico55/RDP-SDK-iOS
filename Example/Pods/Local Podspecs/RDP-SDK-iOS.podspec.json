@@ -1,0 +1,44 @@
+{
+  "name": "RDP-SDK-iOS",
+  "version": "0.1.23",
+  "summary": "A short description of RDP-SDK-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ferico55/RDP-SDK-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ferico55": "ferico55@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ferico55/RDP-SDK-iOS.git"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "RDP-SDK-iOS/Classes/**/*",
+      "frameworks": [
+        "Accelerate",
+        "AudioToolbox",
+        "AVFoundation",
+        "CoreLocation",
+        "CoreMedia",
+        "MessageUI",
+        "MobileCoreServices",
+        "SystemConfiguration"
+      ],
+      "compiler_flags": [
+        "-fmodules",
+        "-fmodules-autolink"
+      ],
+      "xcconfig": {
+        "OTHER_LDFLAGS": "-lc++ -ObjC"
+      }
+    }
+  ]
+}
