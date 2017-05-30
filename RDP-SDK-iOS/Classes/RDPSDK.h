@@ -18,4 +18,5 @@ FOUNDATION_EXPORT const unsigned char RDPSDKVersionString[];
 #import "RDPConnectAPI.h"
 #import "RDPConnectAPIWebViewController.h"
 #import "RDPRedirectAPIWebViewController.h"
+#import "RDPScanCardViewController.h"
 #import "RDPDirectAPI.h"

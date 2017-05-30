@@ -8,7 +8,9 @@
 
 #ifndef RDPDirectAPIPaymentType_h
 #define RDPDirectAPIPaymentType_h
-
+/**
+An enumeration of DAPI Payment Type
+*/
 typedef NS_ENUM(NSUInteger, RDPDirectAPIPaymentType) {
     RDPDirectPaymentTypeSale,
     RDPDirectPaymentTypeAuthorization,

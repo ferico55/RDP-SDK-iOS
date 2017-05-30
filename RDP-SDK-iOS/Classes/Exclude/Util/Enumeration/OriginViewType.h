@@ -8,6 +8,9 @@
 
 #ifndef OriginViewType_h
 #define OriginViewType_h
+/**
+	An enumeration of CAPI Transaction Type An enumeration of Origin View Type
+*/
 
 typedef NS_ENUM(NSUInteger, OriginViewType) {
     RDPScanCard,

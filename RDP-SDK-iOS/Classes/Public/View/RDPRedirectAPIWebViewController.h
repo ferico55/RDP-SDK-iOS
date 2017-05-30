@@ -50,7 +50,7 @@
 @property(nonatomic, strong) NSString* secret_key;
 @property(nonatomic) int tenor_month;
 
-@property(nonatomic, strong) id<RedirectAPIDelegate> delegate;
+@property(nonatomic, strong) id<RDPRedirectAPIDelegate> delegate;
 @property(nonatomic, strong) RDPRedirectAPI* redirectAPIWrapper;
 @property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) UIBarButtonItem *btnNavDone;

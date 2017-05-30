@@ -17,20 +17,63 @@
 #define RDP_CAPI_DEV_URL @"http://test.reddotpayment.com/connect-api/cgi-bin-live"
 #define RDP_CAPI_PRODUCTION_URL @"https://connect.reddotpayment.com/merchant/cgi-bin-live"
 
-@protocol ConnectAPIDelegate <NSObject>
-
+/**
+ Set of methods to be implemented to act as a Connect API (CAPI)
+ */
+@protocol RDPConnectAPIDelegate <NSObject>
+/**
+ Method that called when request transaction is failed
+ @param errorCode HTTP Response Code
+ @param description Description Of Error
+ */
 - (void) onRequestFailedWithErrorCode:(int) errorCode andDescription:(NSString*) description;
+/**
+ Method that called when request rejected 
+ @param params the dictionary or response that return from server
+ @param errorCode Error Code Value from HTTP Response Code
+ */
 - (void) onRequestRejectedWithParams:(NSDictionary*) params andErrorCode:(int) errorCode;
+/**
+ Method that called when request transaction is Finished or Success
+ @param params the dictionary or response that return from server
+ */
 - (void) onRequestFinishedWithParams:(NSDictionary*) params;
 
 @optional
+/**
+ Method that called just before the payment request
+ */
 - (void) paymentInterfaceWillRequest;
+/**
+ Method that called just after the payment Request
+ */
 - (void) paymentInterfaceDidRequest;
+/**
+ Method that called just before the return url load
+ */
 - (void) returnUrlWillLoad;
+/**
+ Method that called just after the return url load
+ */
 - (void) returnUrlDidLoad;
+/**
+ Method that called just before the signature validate
+ */
 - (void) transactionSignatureWillValidate;
+/**
+ Method that called just after the signature has been validated
+ @param params the dictionary of result signature validation
+ */
 - (void) transactionSignatureDidValidateWithParam: (NSDictionary*) params;
+/**
+ Method that call when consent screen is will be appear or not.
+ This method default falue is NO
+ @returns returns YES if you want to dismiss consent screen, otherwise returns NO.
+ */
 - (BOOL) shouldDismissConsentScreen;
+/**
+ Method that called just after the consent screen dissapear
+ */
 - (void) consentScreenDidDissapear;
 @end
 
@@ -66,10 +109,10 @@
 @property(nonatomic, strong) NSString* cvv2;
 @property(nonatomic, strong) NSString* token_id;
 @property(nonatomic, strong) NSString* order_timeout;
-@property(nonatomic, strong) id<ConnectAPIDelegate> delegate;
+@property(nonatomic, strong) id<RDPConnectAPIDelegate> delegate;
 @property(nonatomic, strong) id<ConnectAPIInternalDelegate> internalDelegate;
 
-- (id) initWithDelegate:(id<ConnectAPIDelegate>) delegate;
+- (id) initWithDelegate:(id<RDPConnectAPIDelegate>) delegate;
 - (void) startRequest;
 - (void) checkAmountValidation;
 //TODO buang method" dibawah ini

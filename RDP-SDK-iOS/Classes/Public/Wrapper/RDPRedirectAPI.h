@@ -20,9 +20,9 @@
 #define RDP_RAPI_PRODUCTION_URL @"https://secure.reddotpayment.com/service/payment-api"
 
 /**
- Set of methods to be implemented to act as a Connect API (CAPI)
+ Set of methods to be implemented to act as a Redirect API (RAPI)
  */
-@protocol RedirectAPIDelegate <NSObject>
+@protocol RDPRedirectAPIDelegate <NSObject>
 /**
  Method that called when payment url has been received
  @param url url that use to pay the payment
@@ -51,11 +51,11 @@
  */
 - (void) paymentInterfaceDidRequest;
 /**
- Method that called just before the return url load
+ Method that called just before the payment url load
  */
 - (void) paymentUrlWillLoad;
 /**
- Method that called just after the return url load
+ Method that called just after the payment url load
  */
 - (void) paymentUrlDidLoad;
 /**
@@ -125,10 +125,10 @@
 @property(nonatomic, strong) NSString* secret_key;
 @property(nonatomic) int tenor_month;
 
-@property(nonatomic, strong) id<RedirectAPIDelegate> delegate;
+@property(nonatomic, strong) id<RDPRedirectAPIDelegate> delegate;
 @property(nonatomic, strong) id<RedirectAPIInternalDelegate> internalDelegate;
 
-- (id) initWithDelegate:(id<RedirectAPIDelegate>) delegate;
+- (id) initWithDelegate:(id<RDPRedirectAPIDelegate>) delegate;
 - (void) startRequest;
 - (void) checkAmountValidation;
 

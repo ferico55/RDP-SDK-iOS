@@ -85,7 +85,11 @@
         return true;
     return false;
 }
-
+/**
+ Method that called recursive to make RAPI and DAPI param becomes NSString
+ @param params the obj that provide to get the string from that
+ @returns NSString a string of object to return
+ */
 + (NSString*) generateGenericSignatureRawString:(id)params {
     if([params isKindOfClass:[NSString class]])
         return params;

@@ -22,8 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		CDF75BB8867BF61E5F08E5F6 /* Pods_RDP_SDK_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93538606A36AA4DC64A107D6 /* Pods_RDP_SDK_iOS_Tests.framework */; };
-		D566D9C43AE5EECFA53F3918 /* Pods_RDP_SDK_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18688831723B41737D4C3669 /* Pods_RDP_SDK_iOS_Example.framework */; };
+		B617890C71E0F63DCF49BCB0 /* libPods-RDP-SDK-iOS_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD884B73781A3DBC75C66AC /* libPods-RDP-SDK-iOS_Example.a */; };
+		B88669271EEF0361B42BB38F /* libPods-RDP-SDK-iOS_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621F7C3C6B314D4EB318EEE5 /* libPods-RDP-SDK-iOS_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		0FBD688159482EB673DA0830 /* Pods-RDP-SDK-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDP-SDK-iOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDP-SDK-iOS_Tests/Pods-RDP-SDK-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		18688831723B41737D4C3669 /* Pods_RDP_SDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDP_SDK_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE0B149C6811BD17F6FF181 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RDP-SDK-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RDP-SDK-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,12 +58,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		621F7C3C6B314D4EB318EEE5 /* libPods-RDP-SDK-iOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RDP-SDK-iOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F28A06A5ECBA603E27FDAF8 /* RDP-SDK-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "RDP-SDK-iOS.podspec"; path = "../RDP-SDK-iOS.podspec"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93538606A36AA4DC64A107D6 /* Pods_RDP_SDK_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDP_SDK_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A730DD4C8603208EBA693579 /* Pods-RDP-SDK-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDP-SDK-iOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RDP-SDK-iOS_Example/Pods-RDP-SDK-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A908C377E33DCA8ABD04725B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AAD884B73781A3DBC75C66AC /* libPods-RDP-SDK-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RDP-SDK-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D9F07088FCA23DDAD61D38 /* Pods-RDP-SDK-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDP-SDK-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDP-SDK-iOS_Example/Pods-RDP-SDK-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F243810E74A30D79D9E29C34 /* Pods-RDP-SDK-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDP-SDK-iOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RDP-SDK-iOS_Tests/Pods-RDP-SDK-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				D566D9C43AE5EECFA53F3918 /* Pods_RDP_SDK_iOS_Example.framework in Frameworks */,
+				B617890C71E0F63DCF49BCB0 /* libPods-RDP-SDK-iOS_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				CDF75BB8867BF61E5F08E5F6 /* Pods_RDP_SDK_iOS_Tests.framework in Frameworks */,
+				B88669271EEF0361B42BB38F /* libPods-RDP-SDK-iOS_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +134,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				18688831723B41737D4C3669 /* Pods_RDP_SDK_iOS_Example.framework */,
-				93538606A36AA4DC64A107D6 /* Pods_RDP_SDK_iOS_Tests.framework */,
+				AAD884B73781A3DBC75C66AC /* libPods-RDP-SDK-iOS_Example.a */,
+				621F7C3C6B314D4EB318EEE5 /* libPods-RDP-SDK-iOS_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

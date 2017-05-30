@@ -10,7 +10,7 @@
 
 @implementation RDPRedirectAPI
 
-- (id) initWithDelegate:(id<RedirectAPIDelegate>) delegate {
+- (id) initWithDelegate:(id<RDPRedirectAPIDelegate>) delegate {
     self = [super init];
     self.delegate = delegate;
     return self;

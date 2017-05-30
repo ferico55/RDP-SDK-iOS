@@ -8,8 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ A Class to calculate MD5 Hashing
+ */
 @interface MD5Calculator : NSObject
-
+/**
+ Method that called to calculate from string using MD5 
+ @param input the input string to be calculated using MD5
+ @returns NSString the result string that has been hash or calculate to be MD5 form
+ */
 + (NSString*) calculateFrom:(NSString*)input;
 
 @end

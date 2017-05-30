@@ -8,10 +8,20 @@
 
 #ifndef ConnectAPIInternalDelegate_h
 #define ConnectAPIInternalDelegate_h
-
+/**
+ Set of methods to be implemented to act
+ as a Connect API (CAPI) Internal
+ that only use on RDPConnectAPIWebViewController
+ */
 @protocol ConnectAPIInternalDelegate <NSObject>
-
+/**
+ Method that called when web view content has been loaded
+ @param content the content that loaded on web view
+ */
 - (void) onWebViewContentLoaded:(NSString*) content;
+/**
+ Method that called when request is failed
+ */
 - (void) onRequestFailed;
 
 @end

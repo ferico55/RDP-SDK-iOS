@@ -1,7 +1,11 @@
 PODS:
-  - RDP-SDK-iOS (0.1.23):
-    - RDP-SDK-iOS/Core (= 0.1.23)
-  - RDP-SDK-iOS/Core (0.1.23)
+  - CardIO (5.4.1)
+  - RDP-SDK-iOS (0.1.38):
+    - RDP-SDK-iOS/CardIO (= 0.1.38)
+    - RDP-SDK-iOS/Core (= 0.1.38)
+  - RDP-SDK-iOS/CardIO (0.1.38):
+    - CardIO
+  - RDP-SDK-iOS/Core (0.1.38)
 
 DEPENDENCIES:
   - RDP-SDK-iOS (from `../`)
@@ -11,8 +15,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RDP-SDK-iOS: 863f6054be42a808d44da58170127b981e86cedd
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  RDP-SDK-iOS: 69a392d75f6c0050902044cccbde234342a06b11
 
-PODFILE CHECKSUM: cbcd2820889bd3a2ed6bc5e46d16be99c8787f9b
+PODFILE CHECKSUM: c6fc25a82ca387736c73aa979836f9de0f3f3af9
 
 COCOAPODS: 1.2.1

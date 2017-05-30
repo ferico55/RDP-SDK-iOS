@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+#import <RDPConnectAPI.h>
 
-@interface RDPViewController : UIViewController
+@interface RDPViewController : UIViewController <RDPConnectAPIDelegate>
 
 @end

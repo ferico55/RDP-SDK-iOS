@@ -8,6 +8,9 @@
 
 #ifndef RDPRedirectAPIPaymentType_h
 #define RDPRedirectAPIPaymentType_h
+/**
+An enumeration of RAPI Payment Type
+*/
 
 typedef NS_ENUM(NSUInteger, RDPRedirectAPIPaymentType) {
     RDPRAPIPaymentTypeSale,

@@ -10,7 +10,7 @@
 #import "SignatureUtil.h"
 @implementation RDPDirectAPI
 
-- (id) initWithDelegate:(id<DirectAPIDelegate>) delegate {
+- (id) initWithDelegate:(id<RDPDirectAPIDelegate>) delegate {
     self = [super init];
     self.delegate = delegate;
     return self;

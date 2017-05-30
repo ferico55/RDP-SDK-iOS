@@ -13,7 +13,7 @@
 
 @implementation RDPConnectAPI
 
-- (id) initWithDelegate:(id<ConnectAPIDelegate>) delegate {
+- (id) initWithDelegate:(id<RDPConnectAPIDelegate>) delegate {
     self = [super init];
     self.delegate = delegate;
     return self;

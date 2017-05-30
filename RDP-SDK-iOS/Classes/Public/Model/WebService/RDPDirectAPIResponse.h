@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WsResponse.h"
+#import "RDPDirectAPIResponse.h"
 /**
  Class to represent a response from Direct API (DAPI)
  */

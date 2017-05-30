@@ -7,7 +7,6 @@
 //
 
 #import "SHA512Calculator.h"
-#include <CommonCrypto/CommonDigest.h>
 @implementation SHA512Calculator
 
 + (NSString *) createSHA512:(NSString *)input {

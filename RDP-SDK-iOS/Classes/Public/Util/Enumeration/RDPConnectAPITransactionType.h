@@ -8,7 +8,9 @@
 
 #ifndef RDPConnectAPITransactionType_h
 #define RDPConnectAPITransactionType_h
-
+/**
+ An enumeration of CAPI Transaction Type
+*/
 typedef NS_ENUM(NSUInteger, RDPConnectAPITransactionType) {
     sale,
     authorization,

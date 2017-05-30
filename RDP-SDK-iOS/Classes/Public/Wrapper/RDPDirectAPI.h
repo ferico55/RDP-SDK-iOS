@@ -16,7 +16,7 @@
 #define RDP_DAPI_DEV_URL @"https://secure-dev.reddotpayment.com/service/payment-api"
 #define RDP_DAPI_PRODUCTION_URL @"https://secure.reddotpayment.com/service/payment-api"
 
-@protocol DirectAPIDelegate <NSObject>
+@protocol RDPDirectAPIDelegate <NSObject>
 
 - (void) onRequestFailedWithErrorCode:(int) errorCode andDescription:(NSString*) description;
 - (void) onRequestFinishedWithResponseObject:(RDPDirectAPIResponse*) response;
@@ -41,14 +41,14 @@
 @property(nonatomic, strong) NSString* payer_name;
 @property(nonatomic, strong) NSString* cvv2;
 @property(nonatomic, strong) NSString* token_id;
-@property(nonatomic, strong) id<DirectAPIDelegate> delegate;
+@property(nonatomic, strong) id<RDPDirectAPIDelegate> delegate;
 @property(nonatomic, strong) NSString* merchant_reference;
 @property(nonatomic, strong) NSString* client_user_agent;
 @property(nonatomic, strong) NSString* client_ip_address;
 @property(nonatomic, strong) NSString* tenor_month;
 @property(nonatomic, strong) NSString* secret_key;
 
-- (id) initWithDelegate:(id<DirectAPIDelegate>) delegate;
+- (id) initWithDelegate:(id<RDPDirectAPIDelegate>) delegate;
 - (void) startRequest;
 
 
